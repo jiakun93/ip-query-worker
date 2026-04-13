@@ -2,7 +2,7 @@
 
 function normalizeTextValue(input) {
   if (typeof input === 'string') return input.trim();
-  if (input === null || input === undefined) return ''
+  if (input === null || input === undefined) return '';
   return String(input).trim();
 }
 
