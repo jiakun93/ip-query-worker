@@ -142,7 +142,7 @@ export {
 // 转义 JSON 字符串以安全嵌入 <script> 标签（防止 XSS）
 function safeJsonStringify(data) {
   return JSON.stringify(data)
-    。替换(/</g, '\\u003c')
+    .replace(/</g, '\\u003c')
     .replace(/>/g, '\\u003e')
     .replace(/&/g, '\\u0026')
     .replace(/'/g, '\\u0027');
