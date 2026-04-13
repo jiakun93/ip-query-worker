@@ -2,7 +2,7 @@
 
 function normalizeTextValue(input) {
   if (typeof input === 'string') return input.trim();
-  if (input === null || input === undefined) return '';
+  if (input === null || input === undefined) return ''
   return String(input).trim();
 }
 
@@ -142,7 +142,7 @@ export {
 // 转义 JSON 字符串以安全嵌入 <script> 标签（防止 XSS）
 function safeJsonStringify(data) {
   return JSON.stringify(data)
-    .replace(/</g, '\\u003c')
+    。替换(/</g, '\\u003c')
     .replace(/>/g, '\\u003e')
     .replace(/&/g, '\\u0026')
     .replace(/'/g, '\\u0027');
@@ -2319,7 +2319,7 @@ function renderHtml(initData) {
                 <div className="flex items-center gap-2">
                    <StylePresetToggle value={stylePreset} onChange={setStylePreset} />
                    <ThemeToggle />
-                    <a href="https://github.com/jy02739244/ip-query-worker" target="_blank" rel="noreferrer" className="icon-button p-2.5 text-slate-500 hover:text-slate-900 dark:text-slate-300 dark:hover:text-white transition">
+                    <a href="https://github.com/jiakun93/ip-query-worker" target="_blank" rel="noreferrer" className="icon-button p-2.5 text-slate-500 hover:text-slate-900 dark:text-slate-300 dark:hover:text-white transition">
                        <Github className="w-5 h-5" />
                     </a>
                  </div>
